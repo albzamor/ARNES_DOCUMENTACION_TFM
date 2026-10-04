@@ -34,10 +34,12 @@ El resultado es una documentación precisa, adaptada a quien la va a leer y de l
 ├── .mcp.json                     registra el servidor MCP al abrir el repo con Claude Code
 ├── .claude/
 │   ├── settings.json             el hook que lanza el linter al guardar
-│   └── skills/doc-harness/       la skill
-│       ├── SKILL.md              el proceso: 12 decisiones en 4 momentos
-│       ├── references/           plantilla del documento y adaptadores por tecnología
-│       └── scripts/              linter de comprensión y detector de deriva
+│   └── skills/
+│       ├── doc-harness/          la skill del arnés
+│       │   ├── SKILL.md          el proceso: 12 decisiones en 4 momentos
+│       │   ├── references/       plantilla del documento y adaptadores por tecnología
+│       │   └── scripts/          linter de comprensión y detector de deriva
+│       └── naming-convention/    convención de nombrado del squad, que el arnés detecta y propone
 ├── mcp-servers/sf-doc-mcp/       servidor MCP: exportación a Word y validación
 ├── docs/
 │   ├── TFM/                      la memoria del trabajo

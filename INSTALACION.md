@@ -34,7 +34,7 @@ claude
 
 Al abrirlo, Claude Code detecta tres cosas sin configuración adicional:
 
-- **La skill** `doc-harness`, en `.claude/skills/`.
+- **La skill** `doc-harness`, en `.claude/skills/`. Junto a ella está `naming-convention`, la convención de nombrado del squad: el arnés la detecta y la propone en el momento de nombrado.
 - **El hook** del linter, en `.claude/settings.json`.
 - **El servidor MCP** `sf-doc-mcp`, declarado en `.mcp.json`. La primera vez, Claude Code pide permiso para activarlo.
 
@@ -111,6 +111,8 @@ Son tres piezas independientes. Copia las que necesites a la raíz de tu proyect
 | La skill | `.claude/skills/doc-harness/` | El proceso completo y el linter |
 | El hook | El bloque `hooks` de `.claude/settings.json` | El linter se lanza solo al guardar |
 | El servidor MCP | `mcp-servers/sf-doc-mcp/` y su entrada en `.mcp.json` | Exportación a Word y validación desde otros clientes |
+
+La skill `naming-convention` es específica de mi squad (prefijo `AF_`). Sirve como ejemplo: si tu proyecto tiene su propia convención, sustitúyela por la tuya o bórrala, y el arnés te preguntará la convención directamente.
 
 Si tu tecnología no es Salesforce, Node.js ni una skill de Claude Code, el arnés te lo dirá y te ofrecerá crear un adaptador nuevo en `.claude/skills/doc-harness/references/adapters/`.
 
