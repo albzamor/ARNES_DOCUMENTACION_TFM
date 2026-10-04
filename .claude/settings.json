@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=$(jq -r '.tool_input.file_path // empty'); case \"$f\" in *DOCU.md) out=$(python3 \".claude/skills/doc-harness/scripts/comprehension_linter.py\" \"$f\" 2>&1); jq -n --arg ctx \"$out\" --arg f \"$f\" '{hookSpecificOutput:{hookEventName:\"PostToolUse\", additionalContext: (\"Linter de comprension humana (doc-harness) sobre \" + $f + \":\\n\" + $ctx)}}' 2>/dev/null;; esac",
+            "statusMessage": "Linter de comprensión humana (doc-harness)...",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}

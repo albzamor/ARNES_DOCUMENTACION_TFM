@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "sf-doc-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["mcp-servers/sf-doc-mcp/src/index.js"]
+    }
+  }
+}
