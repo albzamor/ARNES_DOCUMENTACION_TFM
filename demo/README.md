@@ -4,7 +4,9 @@ Esta carpeta recoge la prueba del arnés en uso real: la documentación de un ag
 
 ## Vídeo
 
-**Pendiente de publicar.** El vídeo mostrará el arnés documentando un agente real:
+**[Ver el vídeo en Vimeo](https://vimeo.com/1232839645)** (protegido con contraseña, que se facilita aparte).
+
+El vídeo explica el repositorio y muestra el arnés documentando un agente real:
 
 1. La petición inicial y el brief: alcance, lector y nivel de detalle.
 2. La confirmación del nombrado y del árbol de ficheros antes de crear nada.
@@ -14,6 +16,6 @@ Esta carpeta recoge la prueba del arnés en uso real: la documentación de un ag
 
 ## Caso de referencia
 
-La documentación que se genera en el vídeo quedará en este mismo repositorio, en `docs/<Carpeta del agente>/`, con la misma estructura que la del propio arnés ([docs/SK_DocHarness/](../docs/SK_DocHarness/docHarnessDOCU.md)).
+La documentación que se genera en el vídeo está en este mismo repositorio, en [AF_ActualizadorContactosV2/](AF_ActualizadorContactosV2/), con la misma estructura que la del propio arnés ([docs/SK_DocHarness/](../docs/SK_DocHarness/docHarnessDOCU.md)).
 
 Es el "caso de referencia" que cita el anexo de la [memoria](../docs/TFM/TFM.md).
